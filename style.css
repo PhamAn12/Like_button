@@ -4,14 +4,14 @@ body{
 	line-height: 1.6em;
 	font-size: 13px;
 	height: 100%;
-	font-family: Roboto-Regular;
+	font-family: inherit;
 	color:#1d2129;
 }
 
 .header {
 	width: 1349px;
 	height: 42px;
-	background: #355dbd;
+	background: #4267b2;
 }
 .icon {
 	float: left;
@@ -19,6 +19,21 @@ body{
 .search {
 	float: left;
 	margin-top: 3px;
+}
+.btnSearch {
+	width: 46px;
+	height: 26px;
+	float: left;
+}
+#btnSearch {
+	background: #f5f6f7;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    margin-top: 8px;
+    height: 26px;
+    width: 46px;
+    cursor: pointer;
+    float: left;
 }
 #iconf {
 	color: white;
@@ -34,6 +49,26 @@ body{
 	height: 14px;
 	padding-top: 7px;
 }
+#imgicon {
+	float: left;
+	width: 50px;
+}
+#iconlon {
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 7px;
+    float: left;
+}
+.ten {
+	font-size: 1.1em;
+    font-weight: bold;
+    float: left;
+    /* margin: auto; */
+    margin-top: 12px;
+    margin-left: 9px;
+    color: white;
+    /* font-family: inherit; */
+}
 .container{
 	width: 1349px;
 	height: 1000px;
@@ -44,30 +79,61 @@ body{
 	min-height: 100px;
 	position: fixed;
 	margin-right: 10px;
-	background: red;
+	font-family: inherit;
 	float:left;
+}
+.leftmenu ul {
+  
+  width: 205px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+.leftmenu li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+.leftmenu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: inherit;
+  display: block;
+}
+.leftmenu li:hover {
+  background: #CDE2CD;
 }
 .middle {
 	width: 500px;
-	min-height: 100px;
+	min-height: 1000px;
 	margin-right: 10px;
 	margin-left: 217px;
+	
 	position: relative;
 	flex:1;
-	background: yellow;
 	float:left;
-
+}
+.baiviet {
+	width: 500px;
+	background-color: white;
+	margin-bottom: 10px;
 }
 .tin {
 	width: 300px;
 	height: 100px;
 	background: white;
 	float:left;
+	margin-top: 10px;
 	margin-left: 12px;
+
 }
 .rightmenu {
 	width: 205px;
 	height: 100px;
+	margin-top: 10px;
 	background: aqua;
 	float: right;
 

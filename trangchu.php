@@ -15,8 +15,9 @@
 			<input type="text" id="search" placeholder="Tìm kiếm">
 		
 		</div>
-		<button id="btnSearch"><i class="fa fa-search" font-size = 30px></i></button>	
-
+		<div class="btnSearch"> <button id="btnSearch"><i class="fa fa-search" font-size = 30px></i></button> </div>	
+		<div class="imgicon"> <img id="iconlon" src="img/icon.png"> </div>
+		<div class= "ten"> Ân </div>
 	</div>
 	<div class="container">		
 		<div class="content">
@@ -52,11 +53,16 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					
 				</div>
-				<div class="baiviet">
-					
-				</div>
+				<?php 
+					if(mysqli_num_rows($result) > 0) {
+						while($row = mysqli_fetch_assoc($result)) {
+							echo '<div class="baiviet">'. $row['title'].'</div>';
+						}
+					} else {
+						echo "Không có dữ liệu";
+					}
+				 ?>
 			</div>
 			<div class="tin">
 				

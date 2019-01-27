@@ -1,4 +1,5 @@
 <?php 
+	
 	$servername = "localhost";
 	$database = "like_button";
 	$username = "root";
@@ -10,13 +11,11 @@
     	die("Connection failed: " . mysqli_connect_error());
 	}
 	// Câu SQL lấy danh sách bài viết
-	$sql = "SELECT * FROM articles";
-	$result = mysqli_query($conn,$sql);
+	$query = "select * from articles";
+	$result = mysqli_query($conn,$query);
 
-	while($row = mysqli_fetch_array($result)) {
-		echo $row['id'];
-		echo $row['title'].'<br>';
-	}
-
+	
 	mysqli_close($conn);
+	$abc = "jdjdjdj";
+	require "trangchu.php";
  ?>
